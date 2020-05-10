@@ -86,8 +86,8 @@ public class DefaultRocks {
                 new Rock(GREENSCHIST, METAMORPHIC, false),
                 new Rock(CATACLASITE, METAMORPHIC, false),
                 new Rock(MYLONITE, METAMORPHIC, false),
-                new Rock(GRAY_SLATE, METAMORPHIC, false)
-                new Rock(BLUE_SLATE, METAMORPHIC, false)
+                new Rock(GRAY_SLATE, METAMORPHIC, false),
+                new Rock(BLUE_SLATE, METAMORPHIC, false),
                 new Rock(GREEN_SLATE, METAMORPHIC, false)
         );
     }
