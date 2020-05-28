@@ -1,6 +1,6 @@
-package com.mrthomas20121.tfc_rocksplus;
+package com.mrthomas20121.tfe_tfc_rocksplus;
 
-import com.mrthomas20121.tfc_rocksplus.proxy.CommonProxy;
+import com.mrthomas20121.tfe_tfc_rocksplus.proxy.CommonProxy;
 import net.minecraft.init.Blocks;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.Mod.EventHandler;
@@ -10,16 +10,16 @@ import net.minecraftforge.fml.common.event.FMLPostInitializationEvent;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
 import org.apache.logging.log4j.Logger;
 
-@Mod(modid = TFC_RocksPlus.MODID, name = TFC_RocksPlus.NAME, version = TFC_RocksPlus.VERSION)
-public class TFC_RocksPlus
+@Mod(modid = TFE_TFC_RocksPlus.MODID, name = TFE_TFC_RocksPlus.NAME, version = TFE_TFC_RocksPlus.VERSION)
+public class TFE_TFC_RocksPlus
 {
-    public static final String MODID = "tfc_rocksplus";
+    public static final String MODID = "tfe_tfc_rocksplus";
     public static final String NAME = "TFC Rocks+ TFE Fork";
     public static final String VERSION = "1.2";
 
     private static Logger logger;
 
-    @SidedProxy(serverSide = "com.mrthomas20121.tfc_rocksplus.proxy.CommonProxy", clientSide = "com.mrthomas20121.tfc_rocksplus.proxy.ClientProxy")
+    @SidedProxy(serverSide = "com.mrthomas20121.tfe_tfc_rocksplus.proxy.CommonProxy", clientSide = "com.mrthomas20121.tfe_tfc_rocksplus.proxy.ClientProxy")
     public static CommonProxy proxy;
 
     @EventHandler
