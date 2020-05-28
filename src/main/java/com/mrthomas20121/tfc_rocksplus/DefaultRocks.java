@@ -16,6 +16,8 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber(modid = MODID)
 public class DefaultRocks {
     
+//Standard Overworld+ Rock Types
+    
     //Igneous Extrusive Rocks
     public static final ResourceLocation BLAIMORITE = new ResourceLocation(MODID, "blaimorite");
     public static final ResourceLocation BONINITE = new ResourceLocation(MODID, "boninite");
@@ -40,6 +42,7 @@ public class DefaultRocks {
     public static final ResourceLocation FLINT = new ResourceLocation(MODID, "flint");
     public static final ResourceLocation CARBONATE_ROCK = new ResourceLocation(MODID, "carbonate_rock");
     public static final ResourceLocation SANDSTONE = new ResourceLocation(MODID, "sandstone");
+    public static final ResourceLocation SANDSTONE = new ResourceLocation(MODID, "marl");
 
     //Metamorphic Rocks
     public static final ResourceLocation BLUESCHIST = new ResourceLocation(MODID, "blueschist");
@@ -56,6 +59,8 @@ public class DefaultRocks {
     {
         event.getRegistry().registerAll(
             
+            //Standard Overworld+ Rock Types
+
                 //Igneous Extrusive Rocks
                 new Rock(BLAIMORITE, IGNEOUS_EXTRUSIVE, false),
                 new Rock(BONINITE, IGNEOUS_EXTRUSIVE, false),
@@ -80,6 +85,7 @@ public class DefaultRocks {
                 new Rock(FLINT, SEDIMENTARY, false),
                 new Rock(CARBONATE_ROCK, SEDIMENTARY, false),
                 new Rock(SANDSTONE, SEDIMENTARY, false),
+                new Rock(MARL, SEDIMENTARY, false),
             
                 //Metamorphic Rocks
                 new Rock(BLUESCHIST, METAMORPHIC, false),
