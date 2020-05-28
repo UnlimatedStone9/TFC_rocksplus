@@ -1,6 +1,6 @@
-package com.mrthomas20121.tfc_rocksplus;
+package com.mrthomas20121.tfe_tfc_rocksplus;
 
-import static com.mrthomas20121.tfc_rocksplus.TFC_RocksPlus.MODID;
+import static com.mrthomas20121.tfe_tfc_rocksplus.TFE_TFC_RocksPlus.MODID;
 import static net.dries007.tfc.types.DefaultRocks.METAMORPHIC;
 import static net.dries007.tfc.types.DefaultRocks.SEDIMENTARY;
 import static net.dries007.tfc.types.DefaultRocks.IGNEOUS_INTRUSIVE;
