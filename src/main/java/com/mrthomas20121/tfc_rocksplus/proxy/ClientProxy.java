@@ -1,6 +1,6 @@
-package com.mrthomas20121.tfc_rocksplus.proxy;
+package com.mrthomas20121.tfe_tfc_rocksplus.proxy;
 
-import com.mrthomas20121.tfc_rocksplus.TFC_RocksPlus;
+import com.mrthomas20121.tfe_tfc_rocksplus.TFE_TFC_RocksPlus;
 import net.minecraft.item.Item;
 import net.minecraftforge.fml.common.Mod;
 import net.minecraftforge.fml.common.event.FMLPreInitializationEvent;
