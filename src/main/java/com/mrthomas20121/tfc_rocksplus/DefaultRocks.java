@@ -42,7 +42,7 @@ public class DefaultRocks {
     public static final ResourceLocation FLINT = new ResourceLocation(MODID, "flint");
     public static final ResourceLocation CARBONATE_ROCK = new ResourceLocation(MODID, "carbonate_rock");
     public static final ResourceLocation SANDSTONE = new ResourceLocation(MODID, "sandstone");
-    public static final ResourceLocation SANDSTONE = new ResourceLocation(MODID, "marl");
+    public static final ResourceLocation MARL = new ResourceLocation(MODID, "marl");
 
     //Metamorphic Rocks
     public static final ResourceLocation BLUESCHIST = new ResourceLocation(MODID, "blueschist");
