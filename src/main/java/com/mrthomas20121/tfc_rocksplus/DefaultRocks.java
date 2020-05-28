@@ -18,6 +18,11 @@ public class DefaultRocks {
     
 //Standard Overworld+ Rock Types
     
+    //Igneous Intrusive Rocks
+    public static final ResourceLocation FOIDOLITE = new ResourceLocation(MODID, "foidolite");
+    public static final ResourceLocation RED_GRANITE = new ResourceLocation(MODID, "red_granite");
+    public static final ResourceLocation BLACK_GRANITE = new ResourceLocation(MODID, "black_granite");
+
     //Igneous Extrusive Rocks
     public static final ResourceLocation BLAIMORITE = new ResourceLocation(MODID, "blaimorite");
     public static final ResourceLocation BONINITE = new ResourceLocation(MODID, "boninite");
@@ -28,11 +33,6 @@ public class DefaultRocks {
     public static final ResourceLocation PUMICE = new ResourceLocation(MODID, "pumice");
     public static final ResourceLocation SCORIA = new ResourceLocation(MODID, "scoria");
     
-    //Igneous Intrusive Rocks
-    public static final ResourceLocation FOIDOLITE = new ResourceLocation(MODID, "foidolite");
-    public static final ResourceLocation RED_GRANITE = new ResourceLocation(MODID, "red_granite");
-    public static final ResourceLocation BLACK_GRANITE = new ResourceLocation(MODID, "black_granite");
-
     //Sedimentary Rocks
     public static final ResourceLocation ARKOSE = new ResourceLocation(MODID, "arkose");
     public static final ResourceLocation JASPILLITE = new ResourceLocation(MODID, "jaspillite");
@@ -53,14 +53,48 @@ public class DefaultRocks {
     public static final ResourceLocation BLUE_SLATE = new ResourceLocation(MODID, "blue_slate");
     public static final ResourceLocation GREEN_SLATE = new ResourceLocation(MODID, "green_slate");
 
+    
+    
+//Nether Rock Types
+    
+    
+    //Igneous Intrusive Rocks
+
+    //Igneous Extrusive Rocks
+    public static final ResourceLocation NETHERRACK = new ResourceLocation(MODID, "netherrack");
+    public static final ResourceLocation HELLSTONE = new ResourceLocation(MODID, "hellstone");
+    public static final ResourceLocation BLACKSTONE = new ResourceLocation(MODID, "blackstone");
+    
+    //Sedimentary Rocks
+            
+    //Metamorphic Rocks
+
+    
+    
+//End Rock Types
+    
+    //Igneous Intrusive Rocks
+    
+    //Igneous Extrusive Rocks
+
+    //Sedimentary Rocks
+    public static final ResourceLocation ENDSTONE = new ResourceLocation(MODID, "endstone");
+            
+    //Metamorphic Rocks
+
 
     @SubscribeEvent
     public static void onPreRegisterRock(TFCRegistryEvent.RegisterPreBlock<Rock> event)
     {
         event.getRegistry().registerAll(
             
-            //Standard Overworld+ Rock Types
+//Standard Overworld+ Rock Types
 
+                //Igneous Intrusive Rocks
+                new Rock(FOIDOLITE, IGNEOUS_INTRUSIVE, false),
+                new Rock(RED_GRANITE, IGNEOUS_INTRUSIVE, false),
+                new Rock(BLACK_GRANITE, IGNEOUS_INTRUSIVE, false),
+            
                 //Igneous Extrusive Rocks
                 new Rock(BLAIMORITE, IGNEOUS_EXTRUSIVE, false),
                 new Rock(BONINITE, IGNEOUS_EXTRUSIVE, false),
@@ -70,11 +104,6 @@ public class DefaultRocks {
                 new Rock(OBSIDIAN, IGNEOUS_EXTRUSIVE, false),
                 new Rock(PUMICE, IGNEOUS_EXTRUSIVE, false),
                 new Rock(SCORIA, IGNEOUS_EXTRUSIVE, false),
-            
-                //Igneous Intrusive Rocks
-                new Rock(FOIDOLITE, IGNEOUS_INTRUSIVE, false),
-                new Rock(RED_GRANITE, IGNEOUS_INTRUSIVE, false),
-                new Rock(BLACK_GRANITE, IGNEOUS_INTRUSIVE, false),
             
                 //Sedimentary Rocks
                 new Rock(ARKOSE, SEDIMENTARY, false),
@@ -94,7 +123,36 @@ public class DefaultRocks {
                 new Rock(MYLONITE, METAMORPHIC, false),
                 new Rock(GRAY_SLATE, METAMORPHIC, false),
                 new Rock(BLUE_SLATE, METAMORPHIC, false),
-                new Rock(GREEN_SLATE, METAMORPHIC, false)
+                new Rock(GREEN_SLATE, METAMORPHIC, false),
+            
+            
+            
+//Nether Rock Types
+            
+                //Igneous Intrusive Rocks
+
+                //Igneous Extrusive Rocks
+                new Rock(NETHERRACK, IGNEOUS_EXTRUSIVE, false),
+                new Rock(HELLSTONE, IGNEOUS_EXTRUSIVE, false),
+                new Rock(BLACKSTONE, IGNEOUS_EXTRUSIVE, false),
+            
+                //Sedimentary Rocks
+            
+                //Metamorphic Rocks
+
+            
+            
+//End Rock Types
+            
+                //Igneous Intrusive Rocks
+
+                //Igneous Extrusive Rocks
+
+                //Sedimentary Rocks
+                new Rock(ENDSTONE, SEDIMENTARY, false)
+            
+                //Metamorphic Rocks
+
         );
     }
 }
