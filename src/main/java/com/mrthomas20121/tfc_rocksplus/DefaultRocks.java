@@ -16,6 +16,10 @@ import net.minecraftforge.fml.common.eventhandler.SubscribeEvent;
 @Mod.EventBusSubscriber(modid = MODID)
 public class DefaultRocks {
     
+    //
+    //    Figure out how to repress specific rock types from generating in the TFC world.
+    //
+    
 //Standard Overworld+ Rock Types
     
     //Igneous Intrusive Rocks
@@ -57,7 +61,6 @@ public class DefaultRocks {
     
 //Nether Rock Types
     
-    
     //Igneous Intrusive Rocks
 
     //Igneous Extrusive Rocks
@@ -83,10 +86,39 @@ public class DefaultRocks {
     //Metamorphic Rocks
 
 
+
+//Aether Rock Types
+    
+    //Igneous Intrusive Rocks
+    
+    //Igneous Extrusive Rocks
+
+    //Sedimentary Rocks
+            
+    //Metamorphic Rocks
+    public static final ResourceLocation HOLYSTONE = new ResourceLocation(MODID, "holystone");
+
+
+
+
+//Betweenlands Rock Types
+    
+    //Igneous Intrusive Rocks
+    
+    //Igneous Extrusive Rocks
+
+    //Sedimentary Rocks
+    public static final ResourceLocation DENSEBONE = new ResourceLocation(MODID, "densebone");
+
+    //Metamorphic Rocks
+
+
     @SubscribeEvent
     public static void onPreRegisterRock(TFCRegistryEvent.RegisterPreBlock<Rock> event)
     {
         event.getRegistry().registerAll(
+
+            
             
 //Standard Overworld+ Rock Types
 
@@ -151,6 +183,32 @@ public class DefaultRocks {
                 //Sedimentary Rocks
                 new Rock(ENDSTONE, SEDIMENTARY, false)
             
+                //Metamorphic Rocks
+
+
+
+//Aether Rock Types
+            
+                //Igneous Intrusive Rocks
+
+                //Igneous Extrusive Rocks
+
+                //Sedimentary Rocks
+            
+                //Metamorphic Rocks
+                new Rock(HOLYSTONE, METAMORPHIC, false)
+
+
+
+//Betweenlands Rock Types
+            
+                //Igneous Intrusive Rocks
+
+                //Igneous Extrusive Rocks
+
+                //Sedimentary Rocks
+                new Rock(DENSEBONE, METAMORPHIC, false)
+
                 //Metamorphic Rocks
 
         );
