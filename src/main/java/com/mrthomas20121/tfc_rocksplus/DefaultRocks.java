@@ -207,7 +207,7 @@ public class DefaultRocks {
                 //Igneous Extrusive Rocks
 
                 //Sedimentary Rocks
-                new Rock(DENSEBONE, METAMORPHIC, false)
+                new Rock(DENSEBONE, SEDIMENTARY, false)
 
                 //Metamorphic Rocks
 
